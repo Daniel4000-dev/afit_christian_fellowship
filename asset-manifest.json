@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/afit_christian_fellowship/static/css/main.6e2d0ea2.css",
+    "main.js": "/afit_christian_fellowship/static/js/main.a0a509fb.js",
+    "static/js/787.0a2db388.chunk.js": "/afit_christian_fellowship/static/js/787.0a2db388.chunk.js",
+    "static/media/video.mp4": "/afit_christian_fellowship/static/media/video.9d0897d53c757ada39c6.mp4",
+    "static/media/fruits.png": "/afit_christian_fellowship/static/media/fruits.43382dac2319326f98e7.png",
+    "static/media/photo.png": "/afit_christian_fellowship/static/media/photo.91e134a33b5248d63c93.png",
+    "static/media/logo.png": "/afit_christian_fellowship/static/media/logo.92eac173fc13387d0956.png",
+    "index.html": "/afit_christian_fellowship/index.html",
+    "main.6e2d0ea2.css.map": "/afit_christian_fellowship/static/css/main.6e2d0ea2.css.map",
+    "main.a0a509fb.js.map": "/afit_christian_fellowship/static/js/main.a0a509fb.js.map",
+    "787.0a2db388.chunk.js.map": "/afit_christian_fellowship/static/js/787.0a2db388.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e2d0ea2.css",
+    "static/js/main.a0a509fb.js"
+  ]
+}
