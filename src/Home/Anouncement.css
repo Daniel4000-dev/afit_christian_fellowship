@@ -1,0 +1,67 @@
+.anouncement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.anouncement__content {
+    width: 75rem;
+    height: 30rem;
+    border-radius: 10px;
+}
+.anouncement__content {
+      /* ff 3.6+ */
+      background:-moz-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+
+      /* safari 5.1+,chrome 10+ */
+      background:-webkit-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+      /* opera 11.10+ */
+      background:-o-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+      /* ie 10+ */
+      background:-ms-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+      /* global 92%+ browsers support */
+      background:radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+}
+
+@media screen and (max-width: 1050px) {
+    .anouncement {
+        position: relative;
+    }
+
+    .anouncement__content {
+        position: absolute;
+        width: 35rem;
+        height: 20rem;
+        margin-top: 18rem;
+        border-radius: 10px;
+    }
+    .anouncement__content                
+    {
+      /* ff 3.6+ */
+      background:-moz-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+
+      /* safari 5.1+,chrome 10+ */
+      background:-webkit-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+      /* opera 11.10+ */
+      background:-o-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+      /* ie 10+ */
+      background:-ms-radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+      /* global 92%+ browsers support */
+      background:radial-gradient(circle at 50% 50%, rgba(26, 70, 1, 0.75) 0%, rgba(1, 30, 4, 0.98) 50%, rgba(52, 100, 68, 1) 100%);
+  
+    }
+                             
+    
+                
+
+        
+    
+}

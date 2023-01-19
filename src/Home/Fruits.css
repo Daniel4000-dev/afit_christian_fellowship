@@ -1,0 +1,47 @@
+.fruits {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.fruits > img {
+    object-fit:fill;
+    width: 60rem;
+    height: 20rem;
+    border-radius: 15px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+}
+
+.fruits-offering {
+    position: absolute;
+    width: 40rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.fruits-offering_title > h4 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+}
+
+.fruits-offering_body {
+    padding: 10px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .fruits > img {
+        width: 30rem;
+        height: 20rem;
+    }
+    .fruits-offering{ 
+        width: 20rem;
+    }
+}

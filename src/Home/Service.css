@@ -1,0 +1,45 @@
+.service {
+    height: 15rem;
+    padding-top: 15px;
+
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 100%;
+    text-align: center;
+}
+
+.service__head {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.service- {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.service__about {
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 13rem;
+}
+
+.service--,
+.service--- {
+    padding: 20px;
+    text-align: center;
+}
+
+.service__time,
+.service__time1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+    color: white;
+}
