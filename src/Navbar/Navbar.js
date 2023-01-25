@@ -2,34 +2,24 @@ import React from 'react';
 import logo from '../logo.png';
 import './Navbar.css';
 import { Menu } from '@mui/icons-material';
-
-const Links = () => (
-    <>
-    <p><a href="#home">Home</a></p>
-    <p><a href="#about">About Us</a></p>
-    <p><a href="#possibility">Open AI</a></p>
-    <p><a href="#features">Case Studies</a></p>
-    <p><a href="#blog">Library</a></p>
-    </>
-  )
+import { Link } from "react-router-dom";
 
 function Navbar() {
-    
+
   return (
-    <div className='navbar'>
-      <div className="navbar__links">
-        <div className="navbar__logo">
-          <img
-           src={logo}
-           alt="" 
-          />
-        </div>
-        <div className="navbar__links-container">
-          <Links />
-          <Menu />
-        </div>
+    <nav className='navbar'>
+    <div className="navbar__logo">
+      <img
+        src={logo}
+        alt="" 
+      />
+      <div className="navbar__link">
+      <Link className='nav-link' to="/">Home</Link>
+      <Link className='nav-link' to="/about">About Us</Link>
       </div>
+      <Menu />
     </div>
+    </nav>
   )
 }
 
