@@ -1,6 +1,8 @@
+import { Facebook, Instagram } from '@mui/icons-material';
 import React from 'react';
 import './Footer.css';
-import logo from './logo.png'
+import logo from './logo.png';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -18,8 +20,13 @@ function Footer() {
                 <h3>© Copyright ACF 2023. All Rights Reserved. Designed and Developed by ACF MEDIA DEPERTMENT</h3>
             </div>
 
-            <div className="footer__text">
-                <h3></h3>
+            <div className="footer__social">
+               <a href="https://www.google.com" target="_blank"> 
+               <Facebook /> 
+               </a>
+               <a href="https://www.google.com" target="_blank"> 
+               <Instagram /> 
+               </a>
             </div>
         </div>
     </div>

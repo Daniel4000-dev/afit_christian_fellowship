@@ -1,0 +1,47 @@
+.yoo {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+}
+
+.eventCalendar {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.eventCalendar__body {
+    position: absolute;
+    bottom: -130rem;
+    right: 25%;
+    background-color: #404040;
+    width: 50%;
+    height: 50%;
+    max-width: 700px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+}
+
+.eventCalendar__body:hover {
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 5px 7px 8px rgba(0, 0, 0,.24);
+}
+
+.eventCalendar__close {
+    cursor: pointer;
+}
+
+.eventCalendar__close:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 1050px) {
+    .eventCalendar__body {
+        bottom: -88rem;
+    }
+}

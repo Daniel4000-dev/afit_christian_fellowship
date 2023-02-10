@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 .header__video {
     width: 100%;
@@ -25,27 +26,34 @@ header__text {
     fnt-size: 52px;
     top: 42px;
     left: 90px;
+    font-family: 'Rubik Moonrocks', cursive;
+
 }
 
 .header__text {
     position: absolute;
     top: 100px;
-    margin-left: 50px;
+    margin-left: .5rem;
     font-size: 52px;
+    font-family: montserrat;
+    font-family: 'Rubik Moonrocks', cursive;
+    mix-blend-mode: lighten;
+
+
 
 }
 .header__h1-1 {
     text-align: center;
-    color: #C69320;
+    color: #12a2e1;
     display: flex;
-    margin-left: 15rem;
+    margin-left: 17rem;
 }
 
 .header__h1-2 {
     text-align: center;
     display: flex;
     margin-left: 11rem;
-    color: #C69320;
+    color: #12a2e1;
 }
 
 .navbar {
@@ -56,10 +64,12 @@ header__text {
 @media screen  and (max-width: 1050px) {
     .header__top h4 {
         display: flex;
-        width: 550px;
+        width: 600px;
+        font-size: 18px;
         text-align: center;
         margin-top: 5rem;
-        color: #C69320;
+        margin-left: 1rem;
+        color: #12a2e1;
     }
     .header__text {
         font-size: 20px;

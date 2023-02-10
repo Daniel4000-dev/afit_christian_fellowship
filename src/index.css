@@ -17,8 +17,9 @@ code {
 
 
 :root {
-  background-image: url(photo.png);
+  /* background-image: url(photo.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #fff;
 
 }

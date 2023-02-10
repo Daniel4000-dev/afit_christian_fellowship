@@ -1,45 +1,87 @@
 .service {
-    height: 15rem;
+    height: 23rem;
     padding-top: 15px;
 
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);
-    color: w#E1C16E;
+    /* background-color: rgb(0.4,0,0.4);
+    background-color: rgba(0.4,0,0, 0.4); */
+    background-color: #16274f;
+    color: #E1C16E;
     font-weight: bold;
-    border: 3px solid #E1C16E;
-    width: 100%;
+    border: 3px solid grey;
     text-align: center;
 }
 
 .service__head {
     padding-top: 10px;
     text-align: center;
-    color: #E1C16E;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 52px;
+    font-family: Roboto;
+    color: #fff;
 }
 
 .service- {
-    padding-top: 50px;
-    text-align: center;
-    font-size: 18px;
+    width: 70%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-left: 50rem;
+    border-collapse: collapse;
+    color: #fff;
 }
 
-.service__about {
-    display: inline-flex;
-    flex-wrap: wrap;
-    color: #E1C16E;
-    gap: 13rem;
+.service__tbody {
+    padding-left: 50rem;
 }
 
-.service--,
-.service--- {
-    padding: 20px;
-    text-align: center;
+tr.service__sunday td {
 }
 
-.service__time,
-.service__time1 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 7rem;
-    color: #E1C16E;
+tr.service__sunday2 td {
+    width: ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    bottom: 25px;
+}
+
+tr.service__tuesday td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+tr.service__thursday td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+tr.service__friday td {
+    padding-top: 10px;
+}
+
+.service__event {
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    border-radius: 30px !important;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.service__event:hover {
+    color: #16274f;
+}
+
+.service .MuiSvgIcon-root:hover {
+    cursor: pointer;
+    color: white;
+
+}
+
+.service .MuiSvgIcon-root {
+    color: #16274f;
 }

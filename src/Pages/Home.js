@@ -1,14 +1,25 @@
 import React from 'react';
 import './Home.css';
+import { motion } from 'framer-motion';
 import video from '../video.mp4';
 import Service from '../Service';
 import Fruits from '../Fruits';
 import Anouncement from '../Anouncement';
-import Photos from '../Photos'
+import Photos from '../Photos';
+import EventCalendar from '../EventCalendar';
+import { useSelector } from 'react-redux';
+import { selectEventCalendarIsOpen } from '../features/counter/eventSlice';
 
 const Holder = () => {
+  const eventCalendarIsOpen = useSelector(selectEventCalendarIsOpen)
+
   return (
-    <div className='header'>
+    <div 
+    className='header'
+    initial={{opacity: 0}} 
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
         <div className='header__top'>
           <figcaption>
             <video preload='true' autoPlay muted loop playsInline  className='header__video' src={video} />
@@ -25,6 +36,7 @@ const Holder = () => {
         <Anouncement />
         <Fruits />
         <Service />
+        {eventCalendarIsOpen && <EventCalendar />}
         </div>
     </div>
   )

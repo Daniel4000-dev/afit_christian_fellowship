@@ -3,16 +3,16 @@
     width: 100%;
     height: 10rem;
     padding-top: 5rem;
-    background-color: darkgrey;
+    background-color: #7B3F00;
 }
 
 .footer__top-container {
     display: flex;
-    padding-bottom: 20px;
 }
 
 .footer__top {
     display: flex;
+    flex: 0;
     white-space: nowrap; 
     align-items: center;
     margin: auto;
@@ -21,6 +21,7 @@
 .footer__top > h3 {
     font-weight: 900;
     margin-left: 5px;
+    color: #12a2e1;
 }
 
 .footer__top > img {
@@ -36,6 +37,21 @@
     font-weight: 100;
     text-align: center;
     margin: auto;
-    padding-bottom: 3rem;
-    color: #E1C16E;
+    padding-bottom: 1rem;
+    color: grey;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer__social a {
+    color: grey;
+}
+
+.footer__social a:hover {
+    color: #12a2e1;
 }

@@ -1,0 +1,12 @@
+.button {
+    position: fixed; 
+   left: 50%;
+   bottom: 40px;
+   height: 30px;
+   font-size: 4rem;
+   z-index: 1;
+   cursor: pointer;
+   color: blue;
+   background-color: blue;
+   
+}
