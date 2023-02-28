@@ -5,12 +5,14 @@ import Navbar from '../src/Navbar/Navbar';
 import Footer from './Footer';
 import AnimatedRoutes from './AnimatedRoutes';
 import ScrollButton from './components/ScrollButton';
+import Radium, { StyleRoot } from 'radium';
 import { Content, Heading } from './components/Styles';
 
 
 function App() {
 
   return (
+    <StyleRoot>
     <div className='app'>
       <>
         <Navbar />
@@ -21,7 +23,8 @@ function App() {
       <ScrollButton />
       <Footer />
     </div>
+    </StyleRoot>
   );
 }
 
-export default App;
+export default Radium(App)

@@ -1,16 +1,47 @@
 import { Facebook, Instagram } from '@mui/icons-material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Footer.css';
 import logo from './logo.png';
 import { Link } from 'react-router-dom';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'
 
 
 function Footer() {
+
+  const {ref, inView} = useInView({
+    threshold: 0.3,
+    triggerOnce: true
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        y:0,
+        opacity: 1,
+        transition: {
+          duration: 2.5
+        }
+      })
+    }
+    if(!inView){
+      animation.start({
+        y: '-5vw', 
+        opacity: 0
+      })
+    }
+    console.log('footer is currently inview', inView)
+  }, [inView])
   return (
-    <div className='footer'>
+    <motion.div 
+      className='footer'
+      ref={ref}
+    >
+      <motion.div animate={animation}>
         <div className="footer__top-container">
         <div className="footer__top">
-            <img src={logo} alt="" />
+            <img  src={logo} alt="" />
             <h3>AFIT CHRISTIAN FELLOWSHIP</h3>
         </div>
         </div>
@@ -29,7 +60,8 @@ function Footer() {
                </a>
             </div>
         </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 

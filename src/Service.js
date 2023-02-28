@@ -1,18 +1,46 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Service.css';
 import { EventNote } from '@material-ui/icons';
 import { Button } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { openEventCalendar } from './features/counter/eventSlice';
+import { animations, motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'
 
 
 function Service() {
     const dispatch = useDispatch();
 
+    const {ref, inView} = useInView({
+        threshold: 0.02
+    });
+    const animation = useAnimation();
+
+    useEffect(() => {
+        if(inView){
+            animation.start({
+                x: 0,
+                transition: {
+                    duration: 0.2,
+                    when: "beforeChildren"
+                }
+            })
+        }
+        if(!inView){
+            animation.start({x: '-80vw'})
+        }
+        console.log("use effect hook, inview", inView); 
+    }, [inView])
+    
+
   return (
-    <div className='service'>
+    <motion.div 
+        className='service'
+        ref={ref}
+        animate={animation}
+    >
         <div className="service__head">
-        <h3>Worship With Us</h3>
+        <motion.h3 varian={animations} style={{opacity: inView ? 1 : 0}} >Worship With Us</motion.h3>
         </div>
         <table className="service-">
             <tbody className='service__tbody'>
@@ -57,7 +85,7 @@ function Service() {
         >
             <EventNote className="event" />
         </Button>
-    </div>
+    </motion.div>
   )
 }
 

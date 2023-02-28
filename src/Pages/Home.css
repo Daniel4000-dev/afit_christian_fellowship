@@ -15,7 +15,11 @@ header__body {
     display: none;
 }
 
-
+.animatedText {
+    height: 5vh;
+    top: 10rem;
+    margin-top:
+}
 
 header__text {
     height: 250px;
@@ -36,7 +40,7 @@ header__text {
     margin-left: .5rem;
     font-size: 52px;
     font-family: montserrat;
-    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Reggae One', cursive;
     mix-blend-mode: lighten;
 
 

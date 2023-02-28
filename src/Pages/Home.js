@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { motion } from 'framer-motion';
 import video from '../video.mp4';
@@ -9,9 +9,13 @@ import Photos from '../Photos';
 import EventCalendar from '../EventCalendar';
 import { useSelector } from 'react-redux';
 import { selectEventCalendarIsOpen } from '../features/counter/eventSlice';
+import AnimatedText from '../components/AnimatedText';
 
 const Holder = () => {
   const eventCalendarIsOpen = useSelector(selectEventCalendarIsOpen)
+  useEffect(() => {
+    <AnimatedText />
+  }, [])
 
   return (
     <div 
@@ -27,6 +31,10 @@ const Holder = () => {
             <h1 className='header__h1-1'>Welcome to Afit</h1>
             <h1 className='header__h1-2'>Christian Fellowship</h1>
             <h4>We are arrows to our generation. We are a peculiar people. We are a people of God.</h4>
+             <AnimatedText 
+            className="animatedText"
+            text='We are arrows to our generation. We are a peculiar people. We are a people of God.'
+            />
             </div>
           </figcaption>
         </div>

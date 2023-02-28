@@ -2,9 +2,9 @@
     height: 23rem;
     padding-top: 15px;
 
-    /* background-color: rgb(0.4,0,0.4);
-    background-color: rgba(0.4,0,0, 0.4); */
-    background-color: #16274f;
+    background-color: rgb(0.4,0,0.4);
+    background-color: rgba(0.4,0,0, 0.4);
+    background-color: #404040;
     color: #E1C16E;
     font-weight: bold;
     border: 3px solid grey;
@@ -22,18 +22,33 @@
 }
 
 .service- {
-    width: 70%;
+    width: 80%;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    padding-left: 50rem;
+    paddng-left: 55rem;
     border-collapse: collapse;
     color: #fff;
+    border-spacing: 6;
 }
 
+table td:nth-child(2) {
+    transform: translateX(10rem);
+  }
+
+table td:nth-child(3) {
+    transform: translateX(5rem);
+  }
+  
+  table td:nth-child(1) {
+    transform: translateX(5rem);
+  }
+  
+
 .service__tbody {
-    padding-left: 50rem;
+    padding-left: 0rem;
+    border-spacing: 6rem;
 }
 
 tr.service__sunday td {
@@ -43,20 +58,20 @@ tr.service__sunday2 td {
     width: ;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
     bottom: 25px;
 }
 
 tr.service__tuesday td {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
 }
 
 tr.service__thursday td {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
 }
 
 tr.service__friday td {
@@ -85,3 +100,5 @@ tr.service__friday td {
 .service .MuiSvgIcon-root {
     color: #16274f;
 }
+
+  
