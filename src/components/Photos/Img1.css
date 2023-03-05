@@ -1,0 +1,26 @@
+.img1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+}
+
+.img1 > img {
+     width: 100%;  
+     height: auto;  
+     display: flex;  
+     justify-content: center;  
+     align-items: center;
+     transition: transform 0.9s ease-in-out;
+}
+
+.img1 > img:nth-child(6) {
+
+}
+
+.img1 > img:nth-child(9) {
+
+}
+
+.img1 > img:nth-child(4) {
+
+}

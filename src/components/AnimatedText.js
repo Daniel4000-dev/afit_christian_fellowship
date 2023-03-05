@@ -7,7 +7,7 @@ const style = {
     overflow: "hidden", 
     display: "flex", 
     fontize: "2rem", 
-    marginLeft: "2.5rem", 
+    mrginLeft: "0.1rem", 
 }
 
 function AnimatedText({ text }) {
@@ -58,7 +58,7 @@ function AnimatedText({ text }) {
                 color: "#12a2e1",
                 fontFamily: "'Reggae One', cursive",
                 textlign: "center",
-                margiLeft: "2rem"
+                mrgiLeft: "0.1rem"
             }}
             variants={child}
             key={index}>

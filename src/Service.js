@@ -11,24 +11,35 @@ import { useInView } from 'react-intersection-observer'
 function Service() {
     const dispatch = useDispatch();
 
+
+
     const {ref, inView} = useInView({
         threshold: 0.02
     });
     const animation = useAnimation();
 
     useEffect(() => {
-        if(inView){
-            animation.start({
-                x: 0,
-                transition: {
-                    duration: 0.2,
-                    when: "beforeChildren"
-                }
-            })
-        }
-        if(!inView){
-            animation.start({x: '-80vw'})
-        }
+            if(inView){
+                animation.start({
+                    x: 0,
+                    transition: {
+                        duration: 0.2,
+                        when: "beforeChildren"
+                    }
+                })
+            }
+            if(!inView){
+                animation.start({x: '-80vw'})
+            }
+            if(inView){
+                animation.start({
+                    y: 0,
+                    transition: {
+                        duration: 0,
+
+                    }
+                })
+            }
         console.log("use effect hook, inview", inView); 
     }, [inView])
     
@@ -40,7 +51,7 @@ function Service() {
         animate={animation}
     >
         <div className="service__head">
-        <motion.h3 varian={animations} style={{opacity: inView ? 1 : 0}} >Worship With Us</motion.h3>
+        <motion.h3 animate={animation} style={{opacity: inView ? 1 : 0}} >Worship With Us</motion.h3>
         </div>
         <table className="service-">
             <tbody className='service__tbody'>

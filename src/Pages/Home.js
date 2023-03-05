@@ -5,7 +5,7 @@ import video from '../video.mp4';
 import Service from '../Service';
 import Fruits from '../Fruits';
 import Anouncement from '../Anouncement';
-import Photos from '../Photos';
+import Photos from '../components/Photos/Img1';
 import EventCalendar from '../EventCalendar';
 import { useSelector } from 'react-redux';
 import { selectEventCalendarIsOpen } from '../features/counter/eventSlice';
@@ -40,7 +40,7 @@ const Holder = () => {
         </div>
 
         <div className="header__body">
-        <Photos />
+          <Photos />
         <Anouncement />
         <Fruits />
         <Service />

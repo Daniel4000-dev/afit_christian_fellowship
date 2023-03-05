@@ -34,7 +34,7 @@ function Footer() {
     console.log('footer is currently inview', inView)
   }, [inView])
   return (
-    <motion.div 
+    <motion.footer 
       className='footer'
       ref={ref}
     >
@@ -61,7 +61,7 @@ function Footer() {
             </div>
         </div>
       </motion.div>
-    </motion.div>
+    </motion.footer>
   )
 }
 

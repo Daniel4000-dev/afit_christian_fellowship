@@ -5,11 +5,12 @@ import { Menu } from '@mui/icons-material';
 import { Link } from "react-router-dom";
 import AnimatedRoutes from '../AnimatedRoutes';
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
   const [ sticky, setSticky ] = useState(false);
-  const [ color, setColor ] = useState()
+  const [ navcolor, setNavColor ] = useState()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,10 @@ function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll);
   });
+
+  useEffect(() => {
+    console.log(location.pathname)
+  }, [location])
 
   const Links = (
     <div className="navbar__link">
@@ -36,21 +41,21 @@ function Navbar() {
             <Link to="/contact">Contact Us</Link>
           </li>
         </ul> 
-      </div>
+    </div>
   );
 
   return (
     <nav className={sticky ? 'navbar navbar-bg' : 'navbar'}>
-    <div className="navbar">
-    <div className="navbar__logo">
+      <div className="navbar">
+      <div className="navbar__logo">
       <img
         src={logo}
         alt="" 
       />
       {Links}
       <Menu />
-    </div>
-    </div>
+      </div>
+      </div>
     </nav>
   )
 }
